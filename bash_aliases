@@ -1,3 +1,7 @@
+#use vim for editors
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 #stop ctrl-s from freezing terminal
 stty -ixon
 
