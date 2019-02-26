@@ -5,6 +5,8 @@ export EDITOR="$VISUAL"
 #stop ctrl-s from freezing terminal
 stty -ixon
 
+export PATH=~/dots/scripts:$PATH
+
 ######################## git
 GITCOL="\[\033[38;5;209m\]"
 DIRCOL="\[\033[38;5;139m\]"
