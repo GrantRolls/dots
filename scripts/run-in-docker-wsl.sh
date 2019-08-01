@@ -6,9 +6,7 @@ WORK_DIR=/usr/src/wrk
 #Mount paths with WSL point to a path usually under c, /mnt/c -> C://
 MNT_PATH=/mnt
 ABS_PWD=$(readlink -f $PWD) #get abs path of PWD
-echo "path = $ABS_PWD"
-WINDOWS_REL_PATH=`echo ${ABS_PWD#$MNT_PATH}`
-echo "path = $WINDOWS_REL_PATH"
+WINDOWS_REL_PATH=`echo ${ABS_PWD#$MNT_PATH}` #Snips the /mnt portion of path
 
 if [[ $# -eq 0 ]] ; then
 	echo "Use this script to run commands in the specified docker container - the PWD (parent working directory) will be passed as a mount dir @ $WORK_DIR"
