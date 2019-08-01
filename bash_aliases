@@ -7,6 +7,9 @@ stty -ixon
 
 export PATH=~/dots/scripts:$PATH
 
+#If using in WSL environment, to override DOCKER_HOST uncomment this line
+#export DOCKER_HOST=localhost:2375
+
 ######################## git
 GITCOL="\[\033[38;5;209m\]"
 DIRCOL="\[\033[38;5;139m\]"
